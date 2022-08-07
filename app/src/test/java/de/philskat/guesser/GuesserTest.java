@@ -16,9 +16,10 @@ public class GuesserTest {
     assertTrue(guesser.getValue() < 10);
   }
 
+  @Test
   public void checkGuess() {
     Guesser guesser = new Guesser(10);
 
-    assertEquals(Reply.CORRECT, guesser.takeGuess("10"));
+    assertEquals(Reply.CORRECT, guesser.takeGuess(Integer.toString(guesser.getValue())));
   }
 }
