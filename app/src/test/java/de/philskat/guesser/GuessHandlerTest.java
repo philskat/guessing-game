@@ -7,10 +7,10 @@ import org.junit.Test;
 
 import de.philskat.guesser.models.Reply;
 
-public class GuesserTest {
+public class GuessHandlerTest {
   @Test
   public void initGuess() {
-    Guesser guesser = new Guesser(10);
+    GuessHandler guesser = new GuessHandler(10);
 
     assertTrue(guesser.getValue() > 0);
     assertTrue(guesser.getValue() < 10);
@@ -18,7 +18,7 @@ public class GuesserTest {
 
   @Test
   public void checkGuess() {
-    Guesser guesser = new Guesser(10);
+    GuessHandler guesser = new GuessHandler(10);
 
     assertEquals(Reply.CORRECT, guesser.takeGuess(Integer.toString(guesser.getValue())));
   }

@@ -3,12 +3,12 @@ package de.philskat.guesser;
 import de.philskat.guesser.models.Guess;
 import de.philskat.guesser.models.Reply;
 
-public class Guesser {
+public class GuessHandler {
   private int guessCount;
   private int upper;
   private Guess value;
 
-  public Guesser(int upper) {
+  public GuessHandler(int upper) {
     this.guessCount = 0;
     this.upper = upper;
     this.value = new Guess(this.upper);

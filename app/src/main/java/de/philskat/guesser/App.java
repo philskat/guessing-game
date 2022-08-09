@@ -18,7 +18,7 @@ public class App {
 
         int upper = Integer.parseInt(args[1]);
 
-        Guesser guesser = new Guesser(upper);
+        GuessHandler guesser = new GuessHandler(upper);
         boolean running = true;
         
         logger.info("Selected value: " + guesser.getValue());

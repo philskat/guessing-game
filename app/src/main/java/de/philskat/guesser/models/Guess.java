@@ -1,5 +1,7 @@
 package de.philskat.guesser.models;
 
+import java.util.ArrayList;
+
 public class Guess {
   private int guessValue;
 
